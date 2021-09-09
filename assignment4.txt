@@ -1,0 +1,400 @@
+> use college;
+switched to db college
+> db.codekata.insertMany([
+... {
+... "user_id": 1,
+... "no_of_problems": 4
+... },
+... {
+... "user_id": 2,
+... "no_of_problems": 20
+... },
+... {
+... "user_id": 3,
+... "no_of_problems": 8
+... },
+... {
+... "user_id": 4,
+... "no_of_problems": 1
+... },
+... {
+... "user_id": 5,
+... "no_of_problems": 20
+... }]);
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("613a6dd8b5297de4297005a2"),
+                ObjectId("613a6dd8b5297de4297005a3"),
+                ObjectId("613a6dd8b5297de4297005a4"),
+                ObjectId("613a6dd8b5297de4297005a5"),
+                ObjectId("613a6dd8b5297de4297005a6")
+        ]
+}
+> db.topics.insertMany([
+... {
+... "topic_id": 1,
+... "topic_name": "Python",
+... "start": "21-09-12",
+... "end": "21-09-28",
+... "user_id": 1,
+... "course_id": 1
+... },
+... {
+... "topic_id": 2,
+... "topic_name": "DBMS",
+... "start": "21-10-07",
+... "end": "21-10-26",
+... "user_id": 2,
+... "course_id": 2
+... },
+... {
+... "topic_id": 3,
+... "topic_name": "Data Structures",
+... "start": "21-09-15",
+... "end": "21-11-18",
+... "user_id": 3,
+... "course_id": 3
+... },
+... {
+... "topic_id": 4,
+... "topic_name": "Data Science",
+... "start": "21-12-29",
+... "end": "21-12-06",
+... "user_id": 4,
+... "course_id": 4
+... },
+... {
+... "topic_id": 5,
+... "topic_name": "Big Data",
+... "start": "21-11-09",
+... "end": "21-12-01",
+... "user_id": 5,
+... "course_id": 5
+... }]);
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("613a6edeb5297de4297005a7"),
+                ObjectId("613a6edeb5297de4297005a8"),
+                ObjectId("613a6edeb5297de4297005a9"),
+                ObjectId("613a6edeb5297de4297005aa"),
+                ObjectId("613a6edeb5297de4297005ab")
+        ]
+}
+> db.tasks.insertMany([
+... {
+... "task_id": 1,
+... "topic_id": 1,
+... "course": 1,
+... "start": "21-09-18",
+... "deadline": "21-10-12"
+... },
+... {
+... "task_id": 2,
+... "topic_id": 2,
+... "course": 2,
+... "start": "21-12-18",
+... "deadline": "21-11-24"
+... },
+... {
+... "task_id": 3,
+... "topic_id": 3,
+... "course": 3,
+... "start": "21-11-05",
+... "deadline": "21-11-26"
+... },
+... {
+... "task_id": 4,
+... "topic_id": 4,
+... "course": 4,
+... "start": "21-11-27",
+... "deadline": "21-10-10"
+... },
+... {
+... "task_id": 5,
+... "topic_id": 5,
+... "course": 5,
+... "start": "21-12-26",
+... "deadline": "21-09-09"
+... }]);
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("613a7156b5297de4297005bb"),
+                ObjectId("613a7156b5297de4297005bc"),
+                ObjectId("613a7156b5297de4297005bd"),
+                ObjectId("613a7156b5297de4297005be"),
+                ObjectId("613a7156b5297de4297005bf")
+        ]
+}
+> db.mentors.insertMany([
+... {
+... "mentor_id": 1,
+... "mentor_name": "Medge",
+... "course": 1,
+... "mentees_count": 20
+... },
+... {
+... "mentor_id": 2,
+... "mentor_name": "Chaney",
+... "course": 2,
+... "mentees_count": 15
+... },
+... {
+... "mentor_id": 3,
+... "mentor_name": "Hakeem",
+... "course": 3,
+... "mentees_count": 17
+... },
+... {
+... "mentor_id": 4,
+... "mentor_name": "Daniel",
+... "course": 4,
+... "mentees_count": 14
+... },
+... {
+... "mentor_id": 5,
+... "mentor_name": "Brian",
+... "course": 5,
+... "mentees_count": 14
+... }]);
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("613a7259b5297de4297005c0"),
+                ObjectId("613a7259b5297de4297005c1"),
+                ObjectId("613a7259b5297de4297005c2"),
+                ObjectId("613a7259b5297de4297005c3"),
+                ObjectId("613a7259b5297de4297005c4")
+        ]
+}
+> db.companies.insertMany([
+... {
+... "company_id": 1,
+... "company_name": "Nulla In Tincidunt LLP",
+... "date": "21-12-25",
+... "user_id": 1
+... },
+... {
+... "company_id": 2,
+... "company_name": "Vitae Industries",
+... "date": "21-10-02",
+... "user_id": 2
+... },
+... {
+... "company_id": 3,
+... "company_name": "Sed Et LLC",
+... "date": "21-10-28",
+... "user_id": 3
+... },
+... {
+... "company_id": 4,
+... "company_name": "Nibh Sit Amet Limited",
+... "date": "21-10-23",
+... "user_id": 4
+... },
+... {
+... "company_id": 5,
+... "company_name": "Tristique Ac LLP",
+... "date": "21-12-24",
+... "user_id": 5
+... }]);
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("613a6f41b5297de4297005ac"),
+                ObjectId("613a6f41b5297de4297005ad"),
+                ObjectId("613a6f41b5297de4297005ae"),
+                ObjectId("613a6f41b5297de4297005af"),
+                ObjectId("613a6f41b5297de4297005b0")
+        ]
+}
+
+Find all the company drives which appeared between 15 oct-2020 and 31-oct-2020
+> db.companies.find({$and: [{date: {$gt: "2021-10-02"}}, {date: {$lt: "2021-10-25"}}]});
+
+Find all the company drives and students who are appeared for the placement.
+
+> db.companies.aggregate([
+...   {
+...     '$lookup': {
+...       'from': 'users',
+...       'localField': 'user_id',
+...       'foreignField': 'user_id',
+...       'as': 'placements'
+...     }
+...   }
+... ]).pretty();
+
+{
+        "_id" : ObjectId("613a6f41b5297de4297005ac"),
+        "company_id" : 1,
+        "company_name" : "Nulla In Tincidunt LLP",
+        "date" : "21-12-25",
+        "user_id" : 1,
+        "placements" : [
+                {
+                        "_id" : ObjectId("613a6804ddd79619b99c4bc6"),
+                        "user_id" : 1,
+                        "user_name" : "Dara",
+                        "user_email" : "ligula@laciniavitaesodales.net"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("613a6f41b5297de4297005ad"),
+        "company_id" : 2,
+        "company_name" : "Vitae Industries",
+        "date" : "21-10-02",
+        "user_id" : 2,
+        "placements" : [
+                {
+                        "_id" : ObjectId("613a6804ddd79619b99c4bc7"),
+                        "user_id" : 2,
+                        "user_name" : "Cadman",
+                        "user_email" : "nonummy.ipsum@afacilisisnon.co.uk"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("613a6f41b5297de4297005ae"),
+        "company_id" : 3,
+        "company_name" : "Sed Et LLC",
+        "date" : "21-10-28",
+        "user_id" : 3,
+        "placements" : [
+                {
+                        "_id" : ObjectId("613a6804ddd79619b99c4bc8"),
+                        "user_id" : 3,
+                        "user_name" : "Kennan",
+                        "user_email" : "vulputate.posuere.vulputate@ornaretortorat.co.uk"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("613a6f41b5297de4297005af"),
+        "company_id" : 4,
+        "company_name" : "Nibh Sit Amet Limited",
+        "date" : "21-10-23",
+        "user_id" : 4,
+        "placements" : [
+                {
+                        "_id" : ObjectId("613a6804ddd79619b99c4bc9"),
+                        "user_id" : 4,
+                        "user_name" : "Hyacinth",
+                        "user_email" : "adipiscing.lobortis.risus@sedpedeCum.org"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("613a6f41b5297de4297005b0"),
+        "company_id" : 5,
+        "company_name" : "Tristique Ac LLP",
+        "date" : "21-12-24",
+        "user_id" : 5,
+        "placements" : [
+                {
+                        "_id" : ObjectId("613a6804ddd79619b99c4bca"),
+                        "user_id" : 5,
+                        "user_name" : "Noble",
+                        "user_email" : "eu.placerat.eget@nisi.ca"
+                }
+        ]
+}
+
+Find the number of problems solved by the user in codekata
+
+> db.users.aggregate([
+...   {
+...     '$lookup': {
+...       'from': 'codekata',
+...       'localField': 'user_id',
+...       'foreignField': 'user_id',
+...       'as': 'problems_solved'
+...     }
+...   }
+... ]).pretty();
+{
+        "_id" : ObjectId("613a6804ddd79619b99c4bc6"),
+        "user_id" : 1,
+        "user_name" : "Dara",
+        "user_email" : "ligula@laciniavitaesodales.net",
+        "problems_solved" : [
+                {
+                        "_id" : ObjectId("613a6dd8b5297de4297005a2"),
+                        "user_id" : 1,
+                        "no_of_problems" : 4
+                }
+        ]
+}
+{
+        "_id" : ObjectId("613a6804ddd79619b99c4bc7"),
+        "user_id" : 2,
+        "user_name" : "Cadman",
+        "user_email" : "nonummy.ipsum@afacilisisnon.co.uk",
+        "problems_solved" : [
+                {
+                        "_id" : ObjectId("613a6dd8b5297de4297005a3"),
+                        "user_id" : 2,
+                        "no_of_problems" : 20
+                }
+        ]
+}
+{
+        "_id" : ObjectId("613a6804ddd79619b99c4bc8"),
+        "user_id" : 3,
+        "user_name" : "Kennan",
+        "user_email" : "vulputate.posuere.vulputate@ornaretortorat.co.uk",
+        "problems_solved" : [
+                {
+                        "_id" : ObjectId("613a6dd8b5297de4297005a4"),
+                        "user_id" : 3,
+                        "no_of_problems" : 8
+                }
+        ]
+}
+{
+        "_id" : ObjectId("613a6804ddd79619b99c4bc9"),
+        "user_id" : 4,
+        "user_name" : "Hyacinth",
+        "user_email" : "adipiscing.lobortis.risus@sedpedeCum.org",
+        "problems_solved" : [
+                {
+                        "_id" : ObjectId("613a6dd8b5297de4297005a5"),
+                        "user_id" : 4,
+                        "no_of_problems" : 1
+                }
+        ]
+}
+{
+        "_id" : ObjectId("613a6804ddd79619b99c4bca"),
+        "user_id" : 5,
+        "user_name" : "Noble",
+        "user_email" : "eu.placerat.eget@nisi.ca",
+        "problems_solved" : [
+                {
+                        "_id" : ObjectId("613a6dd8b5297de4297005a6"),
+                        "user_id" : 5,
+                        "no_of_problems" : 20
+                }
+        ]
+}
+
+Find all the mentors with who has the mentee's count more than 15
+
+> db.mentors.find({mentees_count: {$gt: 15}}).pretty();
+{
+        "_id" : ObjectId("613a7259b5297de4297005c0"),
+        "mentor_id" : 1,
+        "mentor_name" : "Medge",
+        "course" : 1,
+        "mentees_count" : 20
+}
+{
+        "_id" : ObjectId("613a7259b5297de4297005c2"),
+        "mentor_id" : 3,
+        "mentor_name" : "Hakeem",
+        "course" : 3,
+        "mentees_count" : 17
+}
